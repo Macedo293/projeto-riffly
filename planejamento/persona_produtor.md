@@ -21,8 +21,8 @@ Diego monta seu próprio estúdio em uma sala adaptada da casa dele há quatro a
 
 ### Comportamento digital
 
-Diego usa o celular para responder mensagens de clientes e gerenciar parte da divulgação, mas prefere o computador para tarefas como organizar arquivos de áudio do portfólio. Ainda assim, a maior parte do contato inicial com clientes em potencial — primeira mensagem, negociação rápida, confirmação de horário — acontece pelo celular.
+Diego gerencia o estúdio e o primeiro contato com os clientes diretamente pelo celular, onde responde orçamentos e alinha detalhes operacionais com agilidade. No entanto, prefere a tela do computador quando o trabalho exige foco, como na curadoria e organização das faixas de áudio que compõem seu portfólio.
 
 ### Cenário de uso do Riffly
+Ao criar sua conta no Riffly, Diego estrutura uma vitrine completa: mapeia suas especialidades por gênero, disponibiliza amostras de seus melhores trabalhos, exibe sua tabela de preços e abre sua folha de horários. O aplicativo roda em segundo plano e envia alertas imediatos ao seu celular sempre que uma banda analisa seu trabalho ou inicia uma conversa. Essa dinâmica permite que ele feche contratos rapidamente, aproveitando o momento de maior engajamento do músico.
 
-Diego cria um perfil completo no Riffly: define os gêneros musicais que mais domina, sobe trechos de produções anteriores, define faixa de preço e disponibilidade de agenda. Periodicamente, ele recebe notificação no celular avisando que uma banda visualizou o perfil dele ou enviou uma mensagem de interesse, e responde rapidamente para não perder a oportunidade enquanto o interesse da banda ainda está fresco.
