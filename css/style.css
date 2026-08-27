@@ -1,0 +1,33 @@
+/* Reset e Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #0D0D14; color: #F5F5F7; font-family: 'Inter', sans-serif; }
+
+/* Layout Principal (Mobile First) */
+.app-container { max-width: 400px; margin: 0 auto; padding: 16px; background: #0D0D14; min-height: 100vh; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+.header h1 { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 600; }
+
+/* Busca e Tags */
+.search-bar { display: flex; align-items: center; gap: 8px; background: #1A1A24; border-radius: 10px; padding: 10px 12px; margin-bottom: 12px; color: #A0A0AD; font-size: 13px; }
+.tags { display: flex; gap: 8px; margin-bottom: 24px; overflow-x: auto; }
+.tag { background: #1A1A24; color: #A0A0AD; font-size: 12px; padding: 5px 12px; border-radius: 999px; }
+.tag.active { background: rgba(155, 93, 229, 0.18); color: #C9A6F5; }
+
+/* Cards dos Produtores */
+.feed { display: flex; flex-direction: column; gap: 12px; }
+.card { background: #1A1A24; border-radius: 14px; padding: 12px; display: flex; gap: 12px; }
+.card-img { width: 56px; height: 56px; border-radius: 10px; background: #2A2A38; display: flex; align-items: center; justify-content: center; }
+.card-info { flex: 1; }
+.card-topo { display: flex; justify-content: space-between; align-items: baseline; }
+.card-nome { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; }
+.card-preco { font-size: 11px; color: #39FF8A; }
+.card-estilo { font-size: 11px; color: #A0A0AD; display: block; margin-bottom: 8px; }
+
+/* Player */
+.player-mini { display: flex; align-items: center; gap: 8px; }
+.play-btn { width: 26px; height: 26px; border-radius: 50%; background: #39FF8A; display: flex; align-items: center; justify-content: center; color: #0D0D14; }
+.progress-bar { flex: 1; height: 3px; background: #2A2A38; border-radius: 2px; position: relative; }
+.progress-fill { position: absolute; left: 0; top: 0; height: 100%; width: 35%; background: #39FF8A; border-radius: 2px; }
+.tempo { font-size: 10px; color: #A0A0AD; }
