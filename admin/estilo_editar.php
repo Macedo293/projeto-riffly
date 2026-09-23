@@ -1,4 +1,5 @@
 <?php
+// Inclui o arquivo de conexão com o banco de dados usando PDO
 require_once '../config/conexao.php';
 if (!isset($_GET['id'])) { header("Location: estilos.php"); exit; }
 $id = (int) $_GET['id'];
