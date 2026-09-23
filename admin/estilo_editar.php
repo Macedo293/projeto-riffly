@@ -1,6 +1,6 @@
 <?php
-// Inclui o arquivo de conexão com o banco de dados usando PDO
 require_once '../config/conexao.php';
+// Valida o ID na URL ou redireciona.
 if (!isset($_GET['id'])) { header("Location: estilos.php"); exit; }
 $id = (int) $_GET['id'];
 
@@ -9,8 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nome'])) {
     $stmt->execute([':nome' => trim($_POST['nome']), ':id' => $id]);
     header("Location: estilos.php"); exit;
 }
+// Busca os dados do estilo pelo ID.
 $estilo = $conn->prepare("SELECT * FROM estilos WHERE id = :id");
 $estilo->execute([':id' => $id]);
+// Obtém os dados do estilo.
 $est = $estilo->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
@@ -20,6 +22,8 @@ $est = $estilo->fetch(PDO::FETCH_ASSOC);
     <title>Editar Estilo</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
+        
+       /*Estilização do tema escuro e centralização do formulário */
         body { background-color: #000; color: #FFF; font-family: 'Roboto', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .card { background: #121212; padding: 40px; border-radius: 12px; width: 100%; max-width: 400px; border: 1px solid #333; }
         input { width: 100%; background: #000; border: 1px solid #333; color: #FFF; padding: 12px; border-radius: 8px; margin: 20px 0; outline: none; box-sizing: border-box; }
