@@ -1,5 +1,17 @@
 <?php
+require_once '../config/conexao.php';
+if (!isset($_GET['id'])) { header("Location: estilos.php"); exit; }
+$id = (int) $_GET['id'];
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nome'])) {
+    $stmt = $conn->prepare("UPDATE estilos SET nome = :nome WHERE id = :id");
+    $stmt->execute([':nome' => trim($_POST['nome']), ':id' => $id]);
+    header("Location: estilos.php"); exit;
+}
+$estilo = $conn->prepare("SELECT * FROM estilos WHERE id = :id");
+$estilo->execute([':id' => $id]);
+$est = $estilo->fetch(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
