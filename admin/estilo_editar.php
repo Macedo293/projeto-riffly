@@ -23,7 +23,7 @@ $est = $estilo->fetch(PDO::FETCH_ASSOC);
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
         
-       /*Estilização do tema escuro e centralização do formulário */
+        /* Estilização do tema escuro e centralização do formulário  */
         body { background-color: #000; color: #FFF; font-family: 'Roboto', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
         .card { background: #121212; padding: 40px; border-radius: 12px; width: 100%; max-width: 400px; border: 1px solid #333; }
         input { width: 100%; background: #000; border: 1px solid #333; color: #FFF; padding: 12px; border-radius: 8px; margin: 20px 0; outline: none; box-sizing: border-box; }
