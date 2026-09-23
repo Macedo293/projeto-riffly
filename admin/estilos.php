@@ -2,7 +2,7 @@
 // admin/estilos.php
 require_once '../config/conexao.php';
 
-// CREATE 
+// create
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nome'])) {
     $nome = trim($_POST['nome']);
     if (!empty($nome)) {
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['nome'])) {
     }
 }
 
-// DELETE
+// delete
 $erro = "";
 if (isset($_GET['deletar'])) {
     $id = (int) $_GET['deletar'];
@@ -29,7 +29,7 @@ if (isset($_GET['deletar'])) {
     }
 }
 
-// READ
+// read
 $stmt = $conn->query("SELECT * FROM estilos ORDER BY nome ASC");
 $estilos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -60,7 +60,7 @@ $estilos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         .section-title { font-size: 28px; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.5px; }
 
-        /* Grid de Estilos */
+        /* grid de estilos */
         .grid-estilos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
         .genre-card { background: #212121; padding: 24px 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; border-left: 4px solid #555; transition: 0.2s; }
         .genre-card:hover { background: #2a2a2a; border-left-color: #FFF; transform: translateY(-2px); }
